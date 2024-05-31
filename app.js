@@ -2,7 +2,7 @@
 import express from 'express'
 import pincodeRoutes from './src/routes/pincode-fetcher/index.js'
 import '@shopify/shopify-api/adapters/node';
-import {shopifyApi, LATEST_API_VERSION} from '@shopify/shopify-api';
+// import {shopifyApi, LATEST_API_VERSION} from '@shopify/shopify-api';
 import 'dotenv/config';
 
 // config.config()
