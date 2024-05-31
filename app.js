@@ -4,6 +4,7 @@ import pincodeRoutes from './src/routes/pincode-fetcher/index.js'
 import '@shopify/shopify-api/adapters/node';
 // import {shopifyApi, LATEST_API_VERSION} from '@shopify/shopify-api';
 import 'dotenv/config';
+import cors from 'cors';
 
 // config.config()
 
@@ -21,6 +22,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+app.use(cors());
 
 // const shopify = shopifyApi({
 //     // The next 4 values are typically read from environment variables for added security
